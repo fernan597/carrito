@@ -252,18 +252,18 @@ echo '</div>';
         echo '<br><br><hr><a href="carrito.php"><img src="vercarrito.gif" border="0"></a>';
 */
 
-    
-     echo '<hr>
+ ?>   
+     <hr>
         <form method="POST">
             <button type="submit" name="salir" class="btn-salir">Salir</button>
-        </form>';
+        </form>
 
-        if(isset($_POST['salir'])){
+       <?php if(isset($_POST['salir'])){
             session_destroy();
             header('Location: loginMarket.php');
-        }
+        }?>
     
     
-?>
+
 </body>
 </html>

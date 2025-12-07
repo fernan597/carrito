@@ -85,7 +85,10 @@
     font-size: 15px;
     transition: 0.2s;
 }
-
+.volver{
+    color: white;
+    text-decoration: none;
+}
 .carritoVacio button:hover {
     background-color: #1f3636;
 }
@@ -150,7 +153,7 @@ $conexion = mysqli_connect('localhost','root','','market');
                 <img src="https://cdn-icons-png.flaticon.com/512/102/102661.png" alt="Carrito vacío">
                 <h2>Tu carrito está vacío</h2>
                 <p>Agrega productos para comenzar tu compra.</p>
-                <button ><a class="" href="homeMarket.php">Ver productos</a></button>
+                <button ><a class="volver" href="homeMarket.php">Ver productos</a></button>
                 </div>';
 }
         
