@@ -214,11 +214,11 @@ foreach($productos as $v){
         echo '<a class="btn-sumar" href="sumarCantidad.php?id='.$v[0].'">+</a>';
     }
 
-    echo '</div>'; // acciones
-    echo '</div>'; // card
+    echo '</div>'; 
+    echo '</div>'; 
 }
 
-echo '</div>'; // grid
+echo '</div>'; 
  /*echo '<h3>Bienvendido '.$usuario->nombre.'</h3><br><br><hr>';
 
  echo '<h3>Productos</h3><br><br>

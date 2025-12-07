@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Título de la página</title>
+    <title>Carrito</title>
    <style>
 .carrito-container {
     margin-top: 30px;
@@ -47,6 +47,47 @@
     border-radius: 10px;
     color: #333;
     display: inline-block;
+}
+.carritoVacio {
+    margin: 50px auto;
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: Arial, sans-serif;
+}
+
+.carritoVacio img {
+    width: 80px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.carritoVacio h2 {
+    color: #2F4F4F;
+    margin-bottom: 10px;
+}
+
+.carritoVacio p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.carritoVacio button {
+    background-color: #2F4F4F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.carritoVacio button:hover {
+    background-color: #1f3636;
 }
 </style>
 
@@ -104,6 +145,13 @@ $conexion = mysqli_connect('localhost','root','','market');
     echo '<div class="total-box">Total: $'.$contador.'</div>';
 
     echo '</div>'; // carrito-container
+}else{
+        echo '<div class="carritoVacio">
+                <img src="https://cdn-icons-png.flaticon.com/512/102/102661.png" alt="Carrito vacío">
+                <h2>Tu carrito está vacío</h2>
+                <p>Agrega productos para comenzar tu compra.</p>
+                <button ><a class="" href="homeMarket.php">Ver productos</a></button>
+                </div>';
 }
         
 ?>
